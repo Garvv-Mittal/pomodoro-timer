@@ -37,7 +37,6 @@ This helps reduce burnout and increases deep focus.
 
 ---
 
-## 📂 Project Structure
 ## 📁 File Structure
 
 ```text
