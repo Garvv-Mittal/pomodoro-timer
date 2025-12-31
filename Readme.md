@@ -40,8 +40,6 @@ This helps reduce burnout and increases deep focus.
 ## 📁 File Structure
 
 ```text
-## 📁 File Structure
-
 Pomodoro-Timer/
 ├── main.py 
 │
