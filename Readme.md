@@ -38,3 +38,18 @@ This helps reduce burnout and increases deep focus.
 ---
 
 ## 📂 Project Structure
+Pomodoro-Timer/
+├── main.py
+│   ├─ Handles timer logic (work / short break / long break)
+│   ├─ Countdown mechanism using Tkinter `after()`
+│   ├─ UI layout (labels, buttons, canvas)
+│   └─ Progress tracking using check marks
+│
+├── tomato.png
+│   └─ Tomato image displayed in the Tkinter canvas
+│
+├── screenshots/
+│   └─ ui.png        # Screenshot of the application UI (optional)
+│
+└── README.md
+    └─ Project documentation
