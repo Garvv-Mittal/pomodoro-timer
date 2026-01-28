@@ -1,5 +1,15 @@
 from tkinter import *
 import math
+import sys
+import os
+
+def resource_path(relative_path):
+    try:
+        base_path = sys._MEIPASS
+    except Exception:
+        base_path = os.path.abspath(".")
+    return os.path.join(base_path, relative_path)
+
 
 #---------------CONSTANTS------#
 PINK ="#e2997c"
@@ -65,7 +75,7 @@ def count_down(count):
         check_mark.config(text=marks)
 
     
-#-------------UI----------------#
+#-------------UI-----------cd-----#
 window = Tk()
 window.title("Pomodoro")
 window.config(bg=YELLOW,pady=10,padx=50)
@@ -74,7 +84,7 @@ title_label =Label(text="Pomodoro Timer",fg=GREEN,bg=YELLOW,font=(FONT_NAME,35,"
 title_label.grid(column=1,row=0)
 
 canvas = Canvas(width="650",height="510",bg=YELLOW,highlightthickness=0)#Canvas in which the image of tomato exists
-tomato_img =PhotoImage(file="D:\\Coding\\Python\\Projects\\Pomodoro\\tomato.png")
+tomato_img =PhotoImage(file=resource_path(os.path.join("tomato.png")))
 canvas.create_image(320,255,image= tomato_img)
 timer_text= canvas.create_text(350,270,text ="00:00",fill="white",font=(FONT_NAME,45,"bold"))
 canvas.grid(column=1,row=1)
